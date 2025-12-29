@@ -1,0 +1,32 @@
+:root { --telkom-red: #E1261C; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #f8f9fa;
+  padding-top: 85px;
+}
+
+.navbar { background: white; border-bottom: 1px solid #eee; }
+
+/* Biar class fw-800 / fw-600 kamu beneran jalan */
+.fw-600 { font-weight: 600; }
+.fw-800 { font-weight: 800; }
+
+/* FIX: Flatpickr di atas modal */
+.flatpickr-calendar { z-index: 99999 !important; box-shadow: 0 10px 40px rgba(0,0,0,0.2) !important; }
+.modal { z-index: 1060 !important; }
+.modal-backdrop { z-index: 1050 !important; }
+
+.btn-red {
+  background: var(--telkom-red);
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  transition: 0.3s;
+}
+.btn-red:hover {
+  background: #b91d15;
+  color: white;
+  transform: translateY(-2px);
+}

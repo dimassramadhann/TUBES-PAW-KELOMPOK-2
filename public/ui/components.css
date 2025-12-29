@@ -1,0 +1,14 @@
+/* Utility */
+.fw-800{ font-weight: 800; }
+.fw-600{ font-weight: 600; }
+
+.border-dashed{
+  border-style: dashed !important;
+}
+
+/* Reusable cards */
+.ui-card{
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}

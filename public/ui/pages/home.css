@@ -1,0 +1,79 @@
+/* =========================
+   HOME PAGE (welcome)
+   File: public/ui/pages/home.css
+   ========================= */
+
+/* Spasi navbar fixed-top (kalau base.css belum set) */
+body {
+  padding-top: 86px;
+}
+
+/* Wrapper hero card */
+.home-hero {
+  background: #ffffff;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent tipis biar modern */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #dc2626, #2563eb, #16a34a);
+  opacity: 0.9;
+}
+
+/* Judul besar */
+.home-hero h1 {
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+/* Paragraf */
+.home-hero p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Tombol full */
+.home-hero .btn {
+  font-weight: 700;
+  padding: 14px 18px;
+  border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 28px !important;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 78px;
+  }
+
+  .home-hero {
+    padding: 22px !important;
+  }
+
+  .home-hero h1 {
+    font-size: 1.75rem;
+  }
+}

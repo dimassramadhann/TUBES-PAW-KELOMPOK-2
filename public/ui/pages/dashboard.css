@@ -1,0 +1,73 @@
+.dashboard-title{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px 0;
+}
+.dashboard-highlight{
+  color: var(--telkom-red);
+}
+.dashboard-subtitle{
+  color: var(--muted);
+  margin: 0;
+}
+
+/* STAT cards */
+.stat-card{
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.stat-card h6{
+  margin:0;
+  opacity:.9;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+.stat-card h2{
+  margin: 8px 0 0 0;
+  font-weight: 800;
+}
+.stat-primary{ background:#0d6efd; }
+.stat-warning{ background:#ffc107; }
+.stat-success{ background:#198754; }
+.stat-info{ background:#0dcaf0; }
+
+/* Admin table card */
+.dashboard-card-header{
+  background:#111827;
+  color:#fff;
+  padding: 16px 18px;
+  font-weight: 800;
+}
+
+/* Inventory cards */
+.inventory-card{
+  background: #fff;
+}
+.inventory-thumb{
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 180px;
+  margin-bottom: 14px;
+}
+.inventory-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+.inventory-badge{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Date input in modal */
+.ui-date-range{
+  cursor: pointer;
+}
