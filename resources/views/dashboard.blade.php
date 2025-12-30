@@ -169,10 +169,12 @@
                                 </td>
                             </tr>
                         @empty
-                            <tr>
-                                <td colspan="4" class="text-center py-5 text-muted">Tidak ada pengajuan baru.</td>
-                            </tr>
-                        @endforelse
+<tr>
+    <td colspan="6" class="text-center py-5 text-muted fw-semibold">
+        Tidak ada pengajuan baru.
+    </td>
+</tr>
+@endforelse
                     </tbody>
                 </table>
             </div>
