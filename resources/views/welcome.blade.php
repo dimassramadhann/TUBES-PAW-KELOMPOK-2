@@ -28,5 +28,3 @@
     @endauth
 </div>
 @endsection
-
-  
