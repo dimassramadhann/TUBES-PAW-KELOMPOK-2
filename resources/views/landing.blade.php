@@ -299,4 +299,3 @@
 @push('scripts')
 <script src="{{ asset('ui/pages/landing.js') }}"></script>
 @endpush
- 
