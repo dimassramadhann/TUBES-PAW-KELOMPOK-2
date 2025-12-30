@@ -9,26 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class AlatController extends Controller
 {
-    /**
-     * MENAMPILKAN DATA ALAT
-     */
+    
     public function index()
     {
         $alats = Alat::latest()->get();
         return view('admin.alat.index', compact('alats'));
     }
 
-    /**
-     * FORM TAMBAH ALAT
-     */
+    
     public function create()
     {
         return view('admin.alat.create');
     }
 
-    /**
-     * SIMPAN ALAT BARU
-     */
+   
     public function store(Request $request)
     {
         $request->validate([
@@ -57,9 +51,7 @@ class AlatController extends Controller
             ->with('success', 'Alat berhasil ditambahkan');
     }
 
-    /**
-     * FORM EDIT ALAT
-     */
+    
     public function edit($id)
     {
         $alat = Alat::findOrFail($id);
@@ -80,9 +72,7 @@ public function destroy($id)
         ->with('success', 'Alat berhasil dihapus');
 }
 
-    /**
-     * UPDATE DATA ALAT
-     */
+    
     public function update(Request $request, $id)
     {
         $alat = Alat::findOrFail($id);
