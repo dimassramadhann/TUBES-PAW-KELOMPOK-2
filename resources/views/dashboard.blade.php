@@ -241,12 +241,21 @@
 
                     <div class="card border-0 shadow-sm rounded-4 p-4 mb-3 border-start border-5 border-{{ $statusColor }}
                         animate__animated animate__fadeInUp">
-                        <div class="d-flex justify-content-between mb-2">
-                            <h6 class="fw-800 m-0 text-dark">{{ $r->alat->nama_alat ?? '-' }}</h6>
-                            <span class="badge bg-{{ $statusColor }} rounded-pill">
-                                {{ strtoupper($r->status) }}
-                            </span>
-                        </div>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+    <div>
+        <h6 class="fw-800 m-0 text-dark">
+            {{ $r->alat->nama_alat ?? '-' }}
+        </h6>
+
+        <small class="text-muted fw-semibold" style="font-size:0.75rem;">
+            ID: {{ $r->alat->kode_alat ?? '-' }}
+        </small>
+    </div>
+
+    <span class="badge bg-{{ $statusColor }} rounded-pill">
+        {{ strtoupper($r->status) }}
+    </span>
+</div>
 
                         <small class="text-muted d-block mb-3">
                             <i class="bi bi-calendar2-week me-1"></i>
