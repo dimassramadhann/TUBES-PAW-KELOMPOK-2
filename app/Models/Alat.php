@@ -26,8 +26,10 @@ class Alat extends Model
      * RELASI
      * Satu alat bisa memiliki banyak peminjaman
      */
-    public function peminjamans()
+    public function peminjamas()
     {
         return $this->hasMany(Peminjaman::class);
     }
-}
+}  
+
+
